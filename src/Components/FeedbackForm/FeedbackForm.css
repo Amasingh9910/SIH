@@ -2,7 +2,7 @@
 
 
 .form-page {
-    background-color: #89c88b; /* Pleasant green */
+    background-color: #89c88b; 
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@
     left: 50%;
     width: 100px;
     height: 100px;
-    background-color: #ffffff; /* White drop */
+    background-color: #ffffff; 
     border-radius: 50%;
     transform: translateX(-50%);
     animation: dropFall 2s ease forwards;
@@ -43,27 +43,27 @@
 
 /* Container for the form */
 .form-container {
-    background-color: #ffffff; /* White background for the form */
+    background-color: #ffffff; 
     border-radius: 15px;
     max-width: 800px;
     width: 100%;
-    box-shadow: 0 12px 24px rgba(0, 128, 0, 0.15); /* Soft green shadow */
+    box-shadow: 0 12px 24px rgba(0, 128, 0, 0.15);
     padding: 40px;
 }
 
 /* Form heading */
 .form-heading {
     font-family: 'Raleway', sans-serif;
-    font-size: 2.5rem; /* Larger font size */
-    font-weight: 600; /* Semi-bold weight */
-    color: #ffffff; /* White text color */
+    font-size: 2.5rem; 
+    font-weight: 600;  
+    color: #ffffff; 
     text-align: center;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #4caf50; /* Green background */
-    border-radius: 15px; /* Rounded corners */
-    border: 3px solid #388e3c; /* Darker green border */
-    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2); /* Soft green shadow */
+    background-color: #4caf50; 
+    border-radius: 15px; 
+    border: 3px solid #388e3c; 
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
     position: relative;
     overflow: hidden;
     white-space: nowrap;
@@ -71,19 +71,19 @@
     width: fit-content;
 }
 
-/* Typing animation */
+
 @keyframes typing {
     from { width: 0; }
     to { width: 100%; }
 }
 
-/* Caret animation */
+
 @keyframes caret-blink {
     0%, 100% { border-right-color: transparent; }
     50% { border-right-color: #ffffff; }
 }
 
-/* Apply typing effect with no blink after completion */
+
 .form-heading::after {
     content: '';
     position: absolute;
@@ -91,50 +91,49 @@
     top: 0;
     width: 3px;
     height: 100%;
-    background-color: #ffffff; /* Caret color */
+    background-color: #ffffff; 
     animation: caret-blink 0.75s step-end infinite;
     transition: opacity 0.5s ease-in-out;
 }
 
-/* Heading typing effect */
+
 .typing-animation {
     animation: typing 5s steps(40, end) forwards;
-    border-right: 3px solid #ffffff; /* Caret effect */
+    border-right: 3px solid #ffffff; 
 }
 
-/* Form labels */
+
 .form-label {
     font-family: 'Roboto', sans-serif;
-    color: #444444; /* Neutral label text */
+    color: #444444; 
     font-weight: 600;
 }
 
-/* Input fields */
 .form-input {
-    background-color: #ffffff; /* White input fields */
+    background-color: #ffffff; 
     border-radius: 8px;
-    border: 2px solid #000000; /* Black border */
+    border: 2px solid #000000;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Focus on input fields */
+
 .form-input:focus {
-    border-color: #4caf50; /* Green border on focus */
-    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); /* Green glow */
+    border-color: #4caf50; 
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
     outline: none;
 }
 
 /* Submit button */
 .submit-btn {
-    background-color: #4caf50; /* Green button */
+    background-color: 
     font-size: 18px;
     padding: 10px 20px;
     border-radius: 30px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover effect for the submit button */
+
 .submit-btn:hover {
-    background-color: #388e3c; /* Darker green */
-    transform: scale(1.05); /* Scale effect */
+    background-color: #388e3c; 
+    transform: scale(1.05);
 }

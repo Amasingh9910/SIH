@@ -152,7 +152,7 @@ function Compliance() {
       if (isScanning) {
         scanner.clear();
         setScanResult(result);
-        isScanning = false; // Set isScanning to false to stop further scanning
+        isScanning = false;
       }
     }
 

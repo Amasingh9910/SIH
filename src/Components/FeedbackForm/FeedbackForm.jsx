@@ -13,7 +13,7 @@ const FeedbackForm = () => {
   };
 
   useEffect(() => {
-    // Show the form after a slight delay (after the drop animation completes)
+   
     const timer = setTimeout(() => {
       setShowForm(true);
     }, 2000); 
