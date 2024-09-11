@@ -191,9 +191,9 @@ function Compliance() {
       return (
    
         <div className="full-page-container">
-        <form onSubmit={handleSubmit} className="bg-light p-4 rounded shadow">
+        <form onSubmit={handleSubmit} className="bg-light p-4 rounded shadow ">
             <h1>Compliance Page</h1>
-            <div className="form-group mb-3">
+            <div className="form-group">
                 <label htmlFor="medicineName" className="form-label">Medicine Name</label>
                 <input
                     type="text"
@@ -204,6 +204,11 @@ function Compliance() {
                     placeholder="Enter the name of the medicine"
                 />
             </div>
+
+            
+                  
+
+
             <button type="submit" className="btn btn-primary">Submit</button>
             {alert && <div className="alert alert-info mt-3">{alert}</div>}
         </form>

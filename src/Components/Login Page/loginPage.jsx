@@ -1,7 +1,7 @@
 import React from 'react'
 import './loginpage.css'
 
-function LoginPage() {
+function loginPage() {
   const [isActive, setIsActive] = React.useState(false);
 
   const handleRegisterClick = () => {
@@ -84,4 +84,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default loginPage;
