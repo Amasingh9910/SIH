@@ -1,13 +1,80 @@
 <!doctype html>
 <html lang="en">
   <head>
+    
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style type="text/css">
+      *{
+        margin:0px;
+        text-decoration: none;
+        padding:0px;
+      }
+      .navbar{
+        background: #438917; font-family: calibri; padding-right: 15px;padding-left: 15px;
+    
+      }
+      .navdiv{
+        display: flex; align-items: center; justify-content: space-between;
+      }
+
+      .logo{
+        margin-right: 40vw;
+      }
+      
+      .logo a{
+        font-size: 35px; font-weight: 600; color: white;
+      }
+      li{
+        list-style: none; display: inline-block;
+      }
+      li a{
+        color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+      }
+      .nav-button{
+        background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width: 180px;
+      }
+      .nav-button a{
+        color: white; font-weight: bold; font-size: 15px;
+      }
+    </style>
+
+    
+    <title>औषधिInfo</title>
   </head>
   <body>
+
+    
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo"><a href="#">औषधिInfo</a> </div>
+        <div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Quality</a></li>
+          <li><a href="#">Compliance</a></li>
+          <li><a href="#">Feedback</a></li> 
+          <button class="nav-button"><a href="#">LOGIN  / REGISTER</a></button>
+          
+        </ul>
+      </div>
+      </div>
+    </nav>
+
     <div id="root"></div>
+    
+
+ 
     <script type="module" src="/src/main.jsx"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.27.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/styled-components@5.3.5/dist/styled-components.min.js"></script>
+
+    
+
   </body>
 </html>

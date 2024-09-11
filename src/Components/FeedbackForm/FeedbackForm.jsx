@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './FeedbackForm.css';
 
 const FeedbackForm = () => {
