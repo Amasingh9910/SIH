@@ -1,6 +1,7 @@
 import React, { useState,useRef,useEffect } from 'react'
 import './Compliance.css';
 import { Html5QrcodeScanner } from 'html5-qrcode';
+import { Link} from 'react-router-dom';
 
 
 function Compliance() {
@@ -236,6 +237,10 @@ function Compliance() {
         </div>
       )}
     </div>
+
+    <button className="hidden" id="register" >
+                <Link className=' text-red-500 font-bold' to={'/feedback'}>Submit</Link>
+                </button>
 
             
     </div>

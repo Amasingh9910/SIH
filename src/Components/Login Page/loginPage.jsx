@@ -1,5 +1,6 @@
 import React from 'react'
 import './loginpage.css'
+import { Link} from 'react-router-dom'
 
 function loginPage() {
   const [isActive, setIsActive] = React.useState(false);
@@ -59,7 +60,9 @@ function loginPage() {
               <input type="email" placeholder="Email" />
               <input type="password" placeholder="Password" />
               <a href="#">Forget Your Password?</a>
-              <button>Sign In</button>
+              <button>
+              <Link className=' text-red-500 font-bold' to={'/quality'}>Sign In</Link>
+                </button>
             </form>
           </div>
           <div className="toggle-container">
